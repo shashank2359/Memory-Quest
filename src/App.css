@@ -28,8 +28,8 @@ body{
 
   background:
     linear-gradient(
-      rgba(255,255,255,.25),
-      rgba(255,255,255,.25)
+      rgba(255,255,255,.45),
+      rgba(255,255,255,.45)
     ),
     url("./assets/background.png");
 
@@ -52,7 +52,7 @@ body{
   padding:30px;
 
   background:
-    rgba(255,255,255,.18);
+    rgba(255,255,255,.28);
 
   backdrop-filter:
     blur(12px);
@@ -309,7 +309,7 @@ select{
     height:180%;
 
     background:
-        rgba(255,255,255,.35);
+        rgba(255,255,255,.45);
 
     transform:
         rotate(25deg);
