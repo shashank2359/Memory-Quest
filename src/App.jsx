@@ -272,21 +272,6 @@ export default function App() {
     }
   }, [cards]);
 
-  const gridStyle = {
-    gridTemplateColumns:
-      difficulty === "Easy"
-        ? "repeat(4,140px)"
-        : difficulty ===
-          "Medium"
-        ? "repeat(5,120px)"
-        : "repeat(6,95px)",
-
-    gap:
-      difficulty === "Hard"
-        ? "10px"
-        : "18px",
-  };
-
  return (
   <>
     <div className="cloud cloud1"></div>
@@ -357,12 +342,7 @@ export default function App() {
         </button>
       </div>
 
-      <div
-        className="grid"
-        style={
-          gridStyle
-        }
-      >
+      <div className={`grid ${difficulty.toLowerCase()}`}>
         {cards.map(
           (card) => (
             <Card

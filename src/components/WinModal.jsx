@@ -6,7 +6,7 @@ export default function WinModal({
   return (
     <div className="overlay">
         {
-Array.from({length:40}).map((_,i)=>(
+Array.from({length:20}).map((_,i)=>(
 
 <div
     key={i}
